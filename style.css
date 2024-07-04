@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #164863;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 39px;
+    font-weight: 800;
+    color: #98E4FF;
+    height: auto;
+    margin-bottom: 39px;
+}
+
+.container {
+    /* height: 90vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.games {
+    width: 63vmin;
+    height: 63vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.box {
+    width: 18vmin;
+    height: 18vmin;
+    font-size: 12vmin;
+    font-weight: 800;
+    border-radius: 10px;
+    color: #D80032;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: #b2daee;
+    cursor: pointer;
+}
+
+.resetBut {
+    font-size: 1.25rem;
+    font-weight: 550;
+    padding: 1rem;
+    color: white;
+    background-color: #191913;
+    border: none;
+    border-radius: 0.8rem;
+    margin-top: 2.3rem;
+    cursor: pointer;
+}
+
+.resetBut:hover {
+    background-color: #0f0f0b;
+}
+
+/* message container */
+.msg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.3rem;
+    /* height: 100vh; */
+    height: 75vh;
+}
+
+.msg-container .newBut {
+    font-size: 1.25rem;
+    font-weight: 550;
+    padding: 1rem;
+    color: white;
+    background-color: #191913;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.msg-container .newBut:hover {
+    background-color: #0f0f0b;
+}
+
+.msg-container p {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #0bff78;
+}
+
+@media (width < 770px) {
+    .msg-container p {
+        font-size: 2.7rem;
+        padding: 0 15px;
+    }
+
+}
+
+@media (width < 680px) {
+    .msg-container p {
+        font-size: 2.4rem;
+        padding: 0 15px;
+    }
+
+    .msg-container .newBut {
+        font-size: 1.2rem;
+    }
+
+    .resetBut {
+        font-size: 1.2rem;
+    }
+}
+
+@media (width < 610px) {
+    .msg-container p {
+        font-size: 2.3rem;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 37px;
+        height: auto;
+    }
+}
+
+@media (width < 585px) {
+    .msg-container p {
+        font-size: 2.0rem;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 35px;
+        height: auto;
+    }
+
+    .msg-container .newBut {
+        font-size: 1.0rem;
+    }
+
+    /* .resetBut {
+        font-size: 1.0rem;
+    } */
+}
+
+@media (width < 512px) {
+    .msg-container p {
+        font-size: 1.8rem;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 33px;
+        height: auto;
+    }
+
+    .msg-container .newBut {
+        font-size: 1.0rem;
+    }
+
+    .resetBut {
+        font-size: 1.0rem;
+    }
+}
+
+@media (width < 468px) {
+    .msg-container p {
+        font-size: 1.5rem;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+        height: auto;
+    }
+
+    .msg-container .newBut {
+        font-size: 0.8rem;
+    }
+
+    .resetBut {
+        font-size: 0.8rem;
+    }
+}
+
+@media (width < 390px) {
+    .msg-container p {
+        font-size: 1.2rem;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 27px;
+        height: auto;
+    }
+
+    .msg-container .newBut {
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+
+    .resetBut {
+        font-size: 0.8rem;
+        padding: 0.9rem;
+    }
+}
+
+.msg-hide {
+    display: none;
+}
+
+.boxhide {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
